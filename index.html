@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js" defer></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            VANTA.FOG({
+                el: "#animated-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                highlightColor: 0xffffff,
+                midtoneColor: 0x6e53f0,
+                lowlightColor: 0xf561c8,
+                baseColor: 0xffffff,
+                blurFactor: 1,
+                speed: 1,
+                zoom: 0.9
+            })
+        })
+
+    </script>
+    <title>Hi! I'm Hugo</title>
+</head>
+<div id="animated-bg">
+
+</div>
+
+<body class="w-100 h-100 scrollable-content">
+    <header>
+        <nav class="navbar navbar-expand-lg m-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">mrperita_23</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav w-100 d-flex justify-content-center  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Proyects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Knownledge</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-success">Contact</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="section1" class="d-flex flex-column text-center">
+            <div class="m-5">
+                <h1 id="firtsText" class="m-5"><img id="helloHand" class="mb-4" src="/images/helloHand.png" alt="">Hi!
+                    I'm Hugo.<br>A
+                    junior web
+                    developer in the
+                    process of learning basic and new
+                    technologies.</h1>
+            </div>
+            <div class="d-flex justify-content-center gap-3">
+                <a class="d-flex justify-content-center align-items-center gap-2 border border-1 rounded border-black p-2 link-underline link-underline-opacity-0 text-black customLink"
+                    href="https://github.com/perita23" target="_blank">
+                    <img class="infoLogo" src="/images/GitLogo.png" alt="GitLogo">
+                    <h2 class="fs-4 m-0">GitHub</h2>
+                </a>
+                <a class="d-flex justify-content-center align-items-center gap-2 border border-1 rounded border-black p-2 link-underline link-underline-opacity-0 text-black customLink"
+                    href="https://www.linkedin.com/in/hugogonzalezbedmar/" target="_blank">
+                    <img class="infoLogo" src="/images/linkedinLogo.png" alt="LinkedInLogo">
+                    <h2 class="fs-4 m-0">LinkedIn</h2>
+                </a>
+            </div>
+            <div id="arrowDown" class="mt-5 h-25">
+                <img class="h-25 img-fluid" src="/images/arrowDown.png" alt="">
+            </div>
+        </section>
+        <section style="height: 80vh;" class="">
+            <div class="d-flex flex-row h-100">
+                <div class="bg-white w-50 d-flex flex-row flex-wrap responsive-container ">
+                    <img src="/images/me2.jpg" alt="">
+                </div>
+                <div class=" w-50 customLink">
+                    <h2 class="m-5 fs-1">About me</h2>
+                    <p class="fs-3 m-5 "><i>
+                            Future web developer and a student of Web Application Development (DAW) at
+                            Stucom.<br>
+                            I am passionate about technology and coding, constantly seeking to improve my
+                            skills
+                            and
+                            knowledge.<br>
+                            I am <span class="badge text-bg-secondary fs-3">dedicated</span> to becoming a proficient
+                            developer, with a strong focus on
+                            creating
+                            <span class="badge text-bg-secondary fs-3">innovative</span> and <span
+                                class="badge text-bg-secondary fs-3">efficient</span> web applications.
+                        </i>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section style="height: 50vh;" class="bg-white">
+            <h2 class="pt-5 text-center">Starting with little things!</h2>
+            <h3 class="text-center text-decoration-underline"><i>My proyects</i></h3>
+            <div class="d-flex flex-wrap gap-5 pt-5 mx-5 justify-content-center">
+                <div class="card w-25">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card w-25">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card w-25">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="height: 50vh;">
+
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p><a href="mailto:hugobedmar10.com"
+                            class="text-white text-decoration-none">hugobedmar10@gmail.com</a></p>
+                    <p>Teléfono: + 684 13 38 61</p>
+                    <p>Ubicación: Barcelona, spain</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Redes Sociales</h5>
+                    <a href="https://www.linkedin.com/in/hugogonzalezbedmar/" target="_blank"
+                        class="text-white me-3">LinkedIn</a>
+                    <a href="https://github.com/perita23" target="_blank" class="text-white me-3">GitHub</a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces</h5>
+                    <a href="/proyectos" class="text-white text-decoration-none d-block mb-2">Mis Proyectos</a>
+                    <a href="/cv.pdf" class="text-white text-decoration-none d-block">Descargar CV</a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 Hugo González. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
