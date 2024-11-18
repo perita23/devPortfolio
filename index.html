@@ -12,6 +12,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js" defer></script>
+    <script src="/scripts/main.js" defer></script>
     <script>
         window.addEventListener("DOMContentLoaded", () => {
             VANTA.FOG({
@@ -25,7 +26,7 @@
                 midtoneColor: 0x6e53f0,
                 lowlightColor: 0xf561c8,
                 baseColor: 0xffffff,
-                blurFactor: 1,
+                blurFactor: 0.90,
                 speed: 1,
                 zoom: 0.9
             })
@@ -57,10 +58,10 @@
                             <a class="nav-link active" href="#">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Proyects</a>
+                            <a class="nav-link active" href="#">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Knownledge</a>
+                            <a class="nav-link active" href="#">Knowledge</a>
                         </li>
                     </ul>
                     <button class="btn btn-outline-success">Contact</button>
@@ -71,7 +72,8 @@
     <main>
         <section id="section1" class="d-flex flex-column text-center">
             <div class="m-5">
-                <h1 id="firtsText" class="m-5"><img id="helloHand" class="mb-4" src="/images/helloHand.png" alt="">Hi!
+                <h1 id="firtsText" class="m-5 pt-5"><img id="helloHand" class="mb-4" src="/images/helloHand.png"
+                        alt="">Hi!
                     I'm Hugo.<br>A
                     junior web
                     developer in the
@@ -94,68 +96,50 @@
                 <img class="h-25 img-fluid" src="/images/arrowDown.png" alt="">
             </div>
         </section>
-        <section style="height: 80vh;" class="">
-            <div class="d-flex flex-row h-100">
-                <div class="bg-white w-50 d-flex flex-row flex-wrap responsive-container ">
-                    <img src="/images/me2.jpg" alt="">
-                </div>
-                <div class=" w-50 customLink">
-                    <h2 class="m-5 fs-1">About me</h2>
-                    <p class="fs-3 m-5 "><i>
-                            Future web developer and a student of Web Application Development (DAW) at
-                            Stucom.<br>
-                            I am passionate about technology and coding, constantly seeking to improve my
-                            skills
-                            and
-                            knowledge.<br>
-                            I am <span class="badge text-bg-secondary fs-3">dedicated</span> to becoming a proficient
-                            developer, with a strong focus on
-                            creating
-                            <span class="badge text-bg-secondary fs-3">innovative</span> and <span
-                                class="badge text-bg-secondary fs-3">efficient</span> web applications.
-                        </i>
-                    </p>
-                </div>
+        <section style="height: 20vh;" class="">
+            <div>
+                <h1 class="fs-1 text-center showItem">
+                    <i>"I'm a teemo player"</i>
+                </h1>
             </div>
         </section>
-        <section style="height: 50vh;" class="bg-white">
-            <h2 class="pt-5 text-center">Starting with little things!</h2>
-            <h3 class="text-center text-decoration-underline"><i>My proyects</i></h3>
-            <div class="d-flex flex-wrap gap-5 pt-5 mx-5 justify-content-center">
-                <div class="card w-25">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card w-25">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card w-25">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section style="height: 50vh;">
+        <section style="height: 100vh;">
+            <div class="h-100 m-5 d-flex flex-column gap-4 p-5">
+                <div class="w-100 h-75 d-flex gap-4">
+                    <div class="w-25 h-100 glass-card showItem">
 
+                    </div>
+                    <div class="w-75 h-100 d-flex flex-column gap-4">
+                        <div class="w-100 h-50 glass-card-white showItem">
+
+                        </div>
+                        <div class="w-100 h-50 d-flex gap-4">
+                            <div class="w-75 h-100 glass-card-dark showItem">
+
+                            </div>
+                            <div class="w-25 h-100 glass-card-white showItem">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 h-25 d-flex gap-4">
+                    <div class=" w-50 h-100 glass-card-white showItem">
+
+                    </div>
+                    <div id="clipText" class="w-50 h-100 glass-card-black showItem">
+                        <a class="w-100 h-100 text-decoration-none m-0 p-0 d-flex flex-column justify-content-center"
+                            href="">
+                            <h1 id="myProjectsTitle" class="text-center">
+                                >MY PROJECTS
+                            </h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 mt-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">

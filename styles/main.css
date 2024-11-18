@@ -19,7 +19,7 @@
 }
 
 .customLink {
-    background-color: rgba(41, 41, 41, 0.275);
+    background-color: rgba(255, 255, 255, 0.438);
 }
 
 #helloHand {
@@ -78,6 +78,73 @@
         transform: translateY(-15px);
     }
 }
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.438);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.glass-card-dark {
+    background: rgba(53, 53, 53, 0.438);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.glass-card-black {
+    background: rgba(0, 0, 0, 0.911);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.glass-card-white {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+
+.showItem {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.showItem.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#myProjectsTitle {
+    font-size: 5vw;
+    font-style: oblique;
+    background-color: #ffffff;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 
 #arrowDown {
     animation: bounce 2s infinite;
