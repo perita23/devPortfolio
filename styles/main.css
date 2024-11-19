@@ -39,15 +39,10 @@
 .responsive-container {
     width: 100%;
     max-width: auto;
-    /* o el tamaño máximo que prefieras */
     height: auto;
-    /* ajusta esto al tamaño de alto que prefieras */
     margin: 0 auto;
-    /* centra el contenedor horizontalmente */
     overflow: hidden;
-    /* asegura que el contenido no se salga del contenedor */
     position: relative;
-    /* necesario para el posicionamiento absoluto de la imagen */
 }
 
 .responsive-container img {
@@ -123,6 +118,14 @@
     color: #fff;
 }
 
+.onCard {
+    transition: transform 0.1s ease-in !important;
+}
+
+.onCard:hover {
+    transform: translateY(5px) !important;
+    cursor: pointer;
+}
 
 .showItem {
     opacity: 0;
@@ -145,6 +148,10 @@
 
 }
 
+#aboutMeTitle {
+    font-size: 6vh;
+    color: black;
+}
 
 #arrowDown {
     animation: bounce 2s infinite;
